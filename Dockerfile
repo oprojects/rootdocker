@@ -53,7 +53,7 @@ WORKDIR /home/cernphsft
 ENV ROOTSYS         "/opt/root"
 ENV PATH            "$ROOTSYS/bin:$ROOTSYS/bin/bin:$PATH"
 ENV LD_LIBRARY_PATH "$ROOTSYS/lib:$LD_LIBRARY_PATH"
-ENV PYTHONPATH      "$ROOTSYS/lib:PYTHONPATH"
+ENV PYTHONPATH      "$ROOTSYS/lib:$PYTHONPATH"
 
 # Customise the ROOTbook
 RUN mkdir -p $HOME/.ipython/kernels $HOME/.ipython/profile_default/static
